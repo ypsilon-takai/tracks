@@ -5,6 +5,15 @@ layout: default
 
 h2.  Upgrading Tracks
 
+h3. Upgrading from Tracks 1.7.x to Tracks 2.0RC
+
+# Back up your existing database and installation of Tracks
+# Install Tracks 2.0RC in a new directory
+# Copy over the configuration from your previous Tracks installation. If using SQLite3, copy the old database into the new Tracks 2.0RC directory.
+# Run @rake db:migrate RAILS_ENV=production@ to update your old database to the new schema -- you did back up your database didn't you?
+# Run @script/server@ inside your Tracks 2.0RC directory to start up Tracks 2.0RC.
+# Once you are happy that everything is working well, delete your old Tracks directory.
+
 h3.  Upgrading from Tracks 1.7RC2 to Tracks 1.7
 
 There were only a few fixes in the code, so you can consider unzipping the new release over your install of Tracks 1.7RC2. Do make a backup of your Tracks 1.7RC2 install and your database!
