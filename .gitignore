@@ -1,5 +1,6 @@
 *.log
 _site/*.log
+*~
 nbproject
 config
 tmp

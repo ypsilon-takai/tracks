@@ -5,7 +5,9 @@ layout: default
 
 h2. Installing Tracks
 
+
 h3. Getting Tracks
+
 
 There are two methods of downloading Tracks:
 
@@ -18,7 +20,9 @@ git clone git://github.com/bsag/tracks.git
 cd tracks
 {% endhighlight %}
 
+
 h4. Easy installation options
+
 
 There are a few easy options if you are not confident about installing Tracks from source using these instructions. If you'd like to install Tracks on a local machine, try "BitNami":http://bitnami.org/stack/tracks -- it runs on Windows, Mac OS X and Linux. Alternatively,   you could try "JumpBox":http://jumpbox.com/app/tracks, who provide a JumpBox for Tracks 1.7. JumpBoxes are pre-built, pre-configured virtual applications which run in a range of "Virtualization software applications":http://www.jumpbox.com/supported-virtualization-software. You just download the JumpBox (free), then open the file with your Virtualization software. Once the JumpBox has booted, it will give you a URL which you can visit in a browser. The software will then guide you through setting up an account. If you'd like to try out the JumpBox without installing it, you can use the 'Trial This JumpBox' button on the web site, which will let you play around with it to test it out. Furthermore, there is a free public AMI available for Amazon EC2. Just use any EC2 client and search for Tracks. This works in exactly the same way as the downloaded JumpBox you can easily migrate from a downloaded installation to an EC2 instance or back using the backup system of the JumpBox.
 
@@ -28,6 +32,7 @@ There are also some free hosted Tracks sites, like http://GTDify.com and http://
 
 
 h4.  Requirements
+
 
 The Tracks interface is accessed through a web browser, so you need to run a webserver to serve the Tracks pages up to you. This isn't as daunting as it sounds, however: Tracks ships with a built-in web server called Mongrel which you can run on your own computer to serve the Tracks application locally. If you want to be able to access Tracks from any computer connected to the Internet, then you need to install Tracks on a publicly accessible server, and you will probably be better off using a more robust server such as "Apache":http://www.apache.org/ (using "modrails":http://www.modrails.com/) or "Lighttpd":http://www.lighttpd.net/ to serve the pages, particularly if it will be used by many people.
 
@@ -87,6 +92,7 @@ mysql> CREATE DATABASE tracks;
 mysql> GRANT ALL PRIVILEGES ON tracks.* TO yourmysqluser@localhost \
 IDENTIFIED BY 'password-goes-here' WITH GRANT OPTION;
 {% endhighlight %}
+
 
 
 h4.  Configure variables
