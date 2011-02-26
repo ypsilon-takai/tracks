@@ -11,7 +11,7 @@ h3. Getting Tracks
 
 There are two methods of downloading Tracks:
 
-# (Recommended for most people) Download the "zipped package":http://github.com/bsag/tracks/zipball/v2.0RC, and unzip in your preferred location (e.g. @~/Sites@ for Mac OS X users).
+# (Recommended for most people) Download the "zipped package":https://github.com/bsag/tracks/zipball/v1.7.2 for the latest stable release (1.7.2) or the "zipped RC package":https://github.com/bsag/tracks/zipball/v2.0RC2 for the latest BETA for the 2.0 release, and unzip in your preferred location (e.g. @~/Sites@ for Mac OS X users).
 # If you want to live on the edge, you can get the latest development version from GitHub using git (bear in mind that this may be less stable than the released versions):
 
 {% highlight sh linenos %}
@@ -24,7 +24,7 @@ cd tracks
 h4. Easy installation options
 
 
-There are a few easy options if you are not confident about installing Tracks from source using these instructions. If you'd like to install Tracks on a local machine, try "BitNami":http://bitnami.org/stack/tracks -- it runs on Windows, Mac OS X and Linux. Alternatively,   you could try "JumpBox":http://jumpbox.com/app/tracks, who provide a JumpBox for Tracks 1.7. JumpBoxes are pre-built, pre-configured virtual applications which run in a range of "Virtualization software applications":http://www.jumpbox.com/supported-virtualization-software. You just download the JumpBox (free), then open the file with your Virtualization software. Once the JumpBox has booted, it will give you a URL which you can visit in a browser. The software will then guide you through setting up an account. If you'd like to try out the JumpBox without installing it, you can use the 'Trial This JumpBox' button on the web site, which will let you play around with it to test it out. Furthermore, there is a free public AMI available for Amazon EC2. Just use any EC2 client and search for Tracks. This works in exactly the same way as the downloaded JumpBox you can easily migrate from a downloaded installation to an EC2 instance or back using the backup system of the JumpBox.
+There are a few easy options if you are not confident about installing Tracks from source using these instructions. If you'd like to install Tracks on a local machine, try "BitNami":http://bitnami.org/stack/tracks -- it runs on Windows, Mac OS X and Linux. Alternatively,   you could try "JumpBox":http://jumpbox.com/app/tracks, who provide a JumpBox for Tracks 1.7.2. JumpBoxes are pre-built, pre-configured virtual applications which run in a range of "Virtualization software applications":http://www.jumpbox.com/supported-virtualization-software. You just download the JumpBox (free), then open the file with your Virtualization software. Once the JumpBox has booted, it will give you a URL which you can visit in a browser. The software will then guide you through setting up an account. If you'd like to try out the JumpBox without installing it, you can use the 'Trial This JumpBox' button on the web site, which will let you play around with it to test it out. Furthermore, there is a free public AMI available for Amazon EC2. Just use any EC2 client and search for Tracks. This works in exactly the same way as the downloaded JumpBox you can easily migrate from a downloaded installation to an EC2 instance or back using the backup system of the JumpBox.
 
 If you'd like an easy way to access Tracks from any internet-connected computer, sign up for a free account at "Morph eXchange":http://www.morphexchange.com/. Sign up for a free account, then click on "See all available subscriptions" and you'll see Tracks listed as an application. Just subscribe to Tracks and you can get started. This option is recommended for those with little technical know-how.
 
@@ -42,7 +42,7 @@ Tracks stores its data in a database, and you can either use SQLite3, MySQL or P
 h4.  What is included with the Tracks package?
 
 # Tracks itself
-# Rails 2.3.5 (installed in the @/vendor/rails@ directory, so you do not need to install Rails yourself)
+# Rails 2.3.11 (installed in the @/vendor/rails@ directory, so you do not need to install Rails yourself)
 # An empty SQLite3 database, set up with the correct database schema
 
 
@@ -61,7 +61,7 @@ You can find several installation howtos for specific setups "here":http://www.g
 
 h3.  Installation
 
-This description is intended for people installing Tracks from scratch. If you would like to upgrade an existing installation, please see Upgrading to Tracks 2.0RC.
+This description is intended for people installing Tracks from scratch. If you would like to upgrade an existing installation, please see Upgrading to Tracks 2.0RC2.
 
 # Unzip tracks and install in a directory
 # Decide on a database to use
