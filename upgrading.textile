@@ -16,6 +16,13 @@ Actually no 2.0RC1 release was done, but some people have been using a developme
 # Run @script/server@ inside your Tracks 2.0RC directory to start up Tracks 2.0RC2.
 # Once you are happy that everything is working well, delete your old Tracks directory.
 
+If you did not start with a new copy of Tracks as described above, but installed over an older version (or used git to pull in a newer version), you need to remove the cached version of the javascript and stylesheets of Tracks.
+# jquery-cached.js from public/javascripts
+# tracks-cached.js from public/javascripts
+# trachs-cached.css from public/stylesheets
+
+If you are running an older version of Tracks (1.8devel), they could also be called jquery-all.js, tracks.js and all.css
+
 h3. Upgrading from Tracks 1.7 or 1.7.1 to 1.7.2
 
 The 1.7.1 and 1.7.2 releases are bug fix releases that do not contain changes to the database structure. You can unzip the new release over your current 1.7 or 1.7.1 install.
